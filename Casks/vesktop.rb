@@ -10,7 +10,7 @@ cask "vesktop" do
   desc "Vesktop gives you the performance of web Discord and the comfort of Discord Desktop"
   homepage "https://github.com/Vencord/Vesktop"
 
-  app "Discord (Vesktop).app"
+  app "Vesktop.app"
 
   livecheck do
     url "https://github.com/Vencord/Vesktop.git"
