@@ -12,6 +12,13 @@ cask "vesktop" do
 
   app "Vesktop.app"
 
+  zap trash: [
+    "~/Library/Application Support/vesktop",
+    "~/Library/Preferences/dev.vencord.vesktop.plist",
+    "~/Library/Saved Application State/dev.vencord.vesktop.savedState",
+    "~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/dev.vencord.vesktop.sfl3'"
+  ]
+
   livecheck do
     url "https://github.com/Vencord/Vesktop.git"
     regex(/^v?(\d+(?:\.\d+)+)$/i)
